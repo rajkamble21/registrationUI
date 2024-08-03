@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.registration {
+  padding: 2rem;
+  background-color: #ffffff;
+  width: 600px;
+  border-radius: 7px;
+}
+
+.registration > h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  text-align: center;
+}
+
+.form-controll {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-element {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group {
+  width: 47%;
+  margin: 0.5rem 0;
+}
+
+.input-group > label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  margin: 3px;
+}
+
+.dob-input {
+  margin: 0.5rem 0;
+}
+
+.dob-input > label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  display: block;
+}
+.dob-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+select {
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  margin: 3px;
+  background-color: white;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.fa-calendar-days {
+  font-size: 25px;
+}
+
+.form-controll > button {
+  background-color: #000000;
+  color: white;
+  margin-top: 3rem;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 426px) {
+  .registration {
+    width: 300px;
+  }
+
+  .input-element {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    margin: 3px 0px;
+  }
+
+  .dob-input {
+    margin: 0.5rem 0;
+  }
+
+  .dob-group {
+    gap: 5px;
+  }
+  select {
+    margin: 3px 0px;
+  }
+
+  .fa-calendar-days {
+    display: none !important;
+  }
+
+  .form-controll > button {
+    margin-top: 1.5rem;
+  }
+}
